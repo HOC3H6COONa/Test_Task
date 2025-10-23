@@ -55,13 +55,13 @@ const UserPage = () => {
                 />
 
                 <Stack style={{ flex: 1 }}>
-                    <Text size="sm">
+                    <Text size="lg">
                         <b>ID:</b> {user?.id}
                     </Text>
                     <Text size="lg">
                         <b>Имя:</b> {user?.first_name} {user?.last_name}
                     </Text>
-                    <Text size="md">
+                    <Text size="lg">
                         <b>Email:</b> {user?.email}
                     </Text>
 

@@ -26,7 +26,6 @@ export const useUpdateUser = () => {
         mutationFn: ({ id, payload }: { id: number | string; payload: Partial<User> }) =>
             updateUser(id, payload),
         onSuccess: (_, variables) => {
-            // обновим кэш пользователя и списка
             queryClient.invalidateQueries({ queryKey: ["users"] });
             queryClient.invalidateQueries({ queryKey: ["user", variables.id] });
         },
